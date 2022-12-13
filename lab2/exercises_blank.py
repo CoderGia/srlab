@@ -38,7 +38,7 @@ def framing(signal, window=320, shift=160):
     # Function to create frames from signal
 
     shape = (int((signal.shape[0] - window) / shift + 1), window)
-    frames = np.zeros().astype('float32')
+    frames = np.zeros(shape).astype('float32')
 
     ###########################################################
     # Here is your code
